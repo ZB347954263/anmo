@@ -1,0 +1,28 @@
+<view class='wrap'>
+
+    <view class='head'>
+        <image src='/image/pay/icon-banner.png'></image>
+        <text class="title cfff fz30">深圳XX影城有限公司欢迎你</text>
+        <!-- <text class="title cfff fz30">{{chair.cname}}欢迎您</text> -->
+    </view>
+    <view class='payView'>
+        <block wx:for="{{4}}">
+            <view class='type  {{index==active?"cf5965b border4f5965b":"c333 border3333"}}' data-idx="{{index}}" bindtap='chooseType'>
+                <view class="{{index==active?'radiomodelActive':'radiomodel'}}"></view>
+                <text class='fz38  fwbold'>唤醒身体</text>
+                <view>
+                    <text class='fz38 fwbold'>15</text>
+                    <text class='fz24'>分钟/8.00元</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <button loading="{{loading}}" class='fz32 cfff' bind:tap="payment">{{loading?'正在付款':'立即付款'}}</button>
+
+    <view class="dialogView" wx:if="{{isBad}}">
+        <image src='/image/index/icon-banner.png' bindtap='closeBaClick'></image>
+    </view>
+</view>
+
+<import src="/public/template/footer" />
+<template is="footer" />

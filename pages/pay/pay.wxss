@@ -1,0 +1,79 @@
+/* pay */
+.wrap {
+    position: relative;
+}
+.head {
+    position: relative;
+}
+
+.head image {
+    width: 750rpx;
+    height: 350rpx;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80rpx;
+    line-height: 80rpx;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: left;
+    text-indent: 40rpx;
+}
+
+.payView {
+    margin: 10rpx auto 40rpx;
+    width: 690rpx;
+}
+
+.type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 570rpx;
+    height: 88rpx;
+    border-radius: 88rpx;
+    margin-top: 30rpx;
+    padding: 0 80rpx 0 40rpx;
+}
+
+.radiomodel {
+    width: 40rpx;
+    height: 40rpx;
+    border: 2rpx solid #333;
+    border-radius: 50%;
+}
+
+.radiomodelActive {
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #f5965b;
+    border-radius: 50%;
+}
+
+button {
+    width: 88%;
+    line-height: 88rpx;
+    border-radius: 50rpx;
+    background: linear-gradient(#fdc161, #f08342);
+    margin-top: 40rpx;
+}
+
+
+.dialogView {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.dialogView image {
+    width: 540rpx;
+    height: 360rpx;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}

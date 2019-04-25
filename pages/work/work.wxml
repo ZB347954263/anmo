@@ -1,0 +1,24 @@
+<view class='wrap'>
+    <view class='workView bgfff brs10'>
+        <view class='info'>
+            <text class='fz30 c333'>按摩椅编号: {{cnumber||0}}</text>
+            <navigator class='help fz30 c666' url="../help/help">
+                <image src="/image/work/icon-help.png"></image>
+                <text class='ml10'>帮助</text>
+            </navigator>
+        </view>
+
+        <view class='timer'>
+            <text class='fz72 cf28945 fwbold status'>运行中</text>
+            <text class='fz36 cf28945 fwbold endTime'>{{endTime}}</text>
+            <text class='fz24 c666'>按摩时间：15:00</text>
+        </view>
+    </view>
+
+    <view class="adlist">
+        <image src='/image/index/icon-banner.png' class='banner'></image>
+    </view>
+
+</view>
+<import src="/public/template/footer" />
+<template is="footer" data="{{...footer}}" />

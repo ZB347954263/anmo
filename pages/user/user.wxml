@@ -1,0 +1,63 @@
+<view class="warp">
+    <view class="userInfo">
+        <view class='userView'>
+            <image src='/image/user/icon-header.png' class='headPic brsCicle'></image>
+            <text class='fz40 cfff ml20'>按摩小达人</text>
+            <!-- <image src=''></image> -->
+        </view>
+        <view class='tipsView' wx:if="{{noBind}}">
+            <view>
+                <image src='/image/user/icon-clock.png'></image>
+                <text class='fz26 cfff ml20'>积分可以兑换抵扣券哦，点击兑换！</text>
+            </view>
+            <navigator url="/pages/login/login" class='cfff fz24 bgtransparent border2fff brs10' wx:if="{{isBindTel}}">注册送积分</navigator>
+        </view>
+        <view class='moneyView' wx:else>
+            <block wx:for="{{moneyType}}">
+                <view class='money cfffeff'>
+                    <text class='fz30'>{{item.value}}</text>
+                    <text class='fz24'>{{item.label}}</text>
+                </view>
+                <view class='line' wx:if="{{index<2}}"></view>
+            </block>
+        </view>
+    </view>
+    <view class='msgView bgfff2d6' wx:if="{{tipsMsg}}">
+        <view class='viewFl'>
+            <image src='/image/user/icon-msg.png'></image>
+            <text class='ccfa96e fz30 ml20'>开业大酬宾，即买即送</text>
+        </view>
+        <view class='viewFr'>
+            <image src='/image/user/icon-msg-close.png' bindtap='hideTipsMsg'></image>
+        </view>
+    </view>
+    <view class='rechargeView'>
+        <block wx:for="{{rechargeList}}">
+            <view class='recharge bgf6f6f6'>
+                <text class='fz28 c333'>{{item.label}}</text>
+                <image src='/image/user/icon-hot.png' wx:if="{{index=='1'}}"></image>
+            </view>
+        </block>
+    </view>
+    <view class='pointView'>
+        <navigator url=''>
+            <image src='/image/user/icon-banner.png'></image>
+        </navigator>
+    </view>
+    <view class='recordView'>
+        <block wx:for="{{4}}">
+            <view class='recond'>
+                <view class='viewFl'>
+                    <text class='fz28 c333 fwbold overflow1'>深圳南山欢乐颂星际影城店</text>
+                    <text class='fz24 cccc'>2018年4月20日 12:22:20</text>
+                </view>
+                <view class='viewFr'>
+                    <text class='fz28 c333 fwbold'>￥12</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+
+<import src="/public/template/footer" />
+<template is="footer" data="{{...footer}}" />

@@ -1,0 +1,149 @@
+.userInfo {
+    width: 650rpx;
+    padding: 48rpx 50rpx 30rpx;
+    background: linear-gradient(122deg, rgba(240, 131, 66, 1) 0%, rgba(255, 198, 100, 1) 99%);
+}
+
+.userInfo > view {
+    display: flex;
+    align-items: center;
+}
+
+.userView {
+    justify-content: flex-start;
+}
+
+.userView .headPic {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.tipsView {
+    justify-content: space-between;
+    margin: 56rpx 0 40rpx;
+}
+.tipsView > view {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tipsView image {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.tipsView navigator {
+    display: block;
+    width: 154rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    padding: 0;
+    text-align: center;
+}
+
+.moneyView {
+    justify-content: space-around;
+    margin: 56rpx 0 40rpx;
+}
+
+.moneyView .money {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80rpx;
+}
+
+.moneyView .line {
+    width: 2rpx;
+    height: 36rpx;
+    background-color: #fff;
+}
+
+.msgView {
+    width: 678rpx;
+    height: 74rpx;
+    padding: 0 36rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msgView .viewFl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.msgView .viewFl image {
+    width: 38rpx;
+    height: 36rpx;
+}
+
+.msgView .viewFr image {
+    width: 26rpx;
+    height: 26rpx;
+}
+
+.rechargeView {
+    padding: 0 30rpx;
+    width: 690rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.recharge {
+    position: relative;
+    width: 200rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-radius: 6rpx;
+    text-align: center;
+    margin-top: 30rpx;
+}
+
+.recharge image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40rpx;
+    height: 30rpx;
+}
+
+.pointView {
+    width: 690rpx;
+    padding: 0 30rpx;
+}
+
+.pointView image {
+    width: 690rpx;
+    height: 142rpx;
+    margin: 40rpx auto;
+}
+
+.recordView {
+    width: 690rpx;
+    padding: 0 30rpx;
+}
+
+.recond {
+    height: 112rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #eee;
+}
+
+.recond .viewFl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.recond .viewFl text {
+    max-width: 600rpx;
+    line-height: 44rpx;
+}

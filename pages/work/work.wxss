@@ -1,0 +1,53 @@
+.wrap {
+    background: #f5f6f8;
+}
+
+.workView {
+    background: #fff;
+    width: 646rpx;
+    height: 300rpx;
+    padding: 30rpx 32rpx;
+    margin: 20rpx auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.help image {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.status {
+    margin: 48rpx 0 20rpx;
+
+}
+.endTime {
+    margin: 0 0 20rpx;
+    
+}
+
+.adlist {
+    width: 710rpx;
+    padding: 0 20rpx;
+}
+
+.adlist image {
+    width: 710rpx;
+    margin: 40rpx auto;
+}

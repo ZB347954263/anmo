@@ -1,0 +1,25 @@
+{
+    "pages": [
+        
+        "pages/work/work",
+        "pages/payOrder/index",
+        
+        "pages/points/point",
+        "pages/user/user",
+        "pages/pay/pay",
+        "pages/login/login",
+        "pages/index/index",
+        "pages/work2/work2",
+        "pages/help/help"
+    ],
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      }
+    },
+    "window": {
+        "navigationBarTitleText": "共享按摩椅",
+        "navigationBarTextStyle": "white"
+    },
+    "debug": true
+}

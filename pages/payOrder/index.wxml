@@ -1,0 +1,45 @@
+<!--pages/payOrder/index.wxml-->
+<view class='wrap'>
+    <view class='tipsView bgfedeae'>
+        <view>
+            <image src='/image/payOrder/icon-time.png'></image>
+            <text class='ml20 mr10 c333 fz30'>按摩时间：</text>
+            <text class='cff4141 fz30'>15分钟</text>
+        </view>
+        <view>
+            <image src='/image/payOrder/icon-money.png'></image>
+            <text class='ml20 mr10 c333 fz30'>金额：</text>
+            <text class='cff4141 fz30'>15分钟</text>
+        </view>
+    </view>
+
+    <view class='c333 fz28 rechargeTip'>
+        <text class='c333 fz28'>您当前的账户余额为：</text>
+        <text class='c333 fz28'>0元</text>
+    </view>
+
+    <view class='rechargeView'>
+        <block wx:for="{{rechargeList}}">
+            <view class='recharge bgf6f6f6'>
+                <text class='fz28 c333'>{{item.label}}</text>
+                <image src='/image/user/icon-hot.png' wx:if="{{index=='1'}}"></image>
+            </view>
+        </block>
+    </view>
+    <picker mode = selector bindchange="quanChange" value="{{quanValue}}" range-key="label" range="{{quanArr}}">
+        <view class="rechargeTip">
+           <text class='c333 fz28'> 抵用券：</text>
+           <text class='c333 fz28'>{{quanArr[quanValue].label||quanArr.length+'张'}}</text>
+        </view>
+    </picker>
+
+    <view class='btnView'>
+        <!-- <button class='cf28945 fz32 bgtransparent border2f28945'>使用10现金券抵扣10元 -->
+        <!-- <image src='/image/payOrder/icon-check.png'></image></button> -->
+        <button class='cfff fz32'>确定</button>
+    </view>
+
+</view>
+
+<import src="/public/template/footer" />
+<template is="footer" />
